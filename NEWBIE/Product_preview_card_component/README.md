@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link](https://your-solution-url.com)
-- Live Site URL: [Link](https://your-live-site-url.com)
+- Solution URL: [Link](https://github.com/princedalsaniya/FM-Challenges/tree/main/NEWBIE/Product_preview_card_component)
+- Live Site URL: [Link](https://princedalsaniya.github.io/FM-Challenges/NEWBIE/Product_preview_card_component/index.html)
 
 ## My process
 
