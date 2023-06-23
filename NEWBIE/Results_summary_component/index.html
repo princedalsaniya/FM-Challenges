@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <title>Results summary component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            Hanken: ['Hanken Grotesk', "sans-serif"]
+          },
+          colors: {
+            lightRed: "hsl(0, 100%, 67%)",
+            orangeYellow: "hsl(39, 100%, 56%)",
+            greenTeal: "hsl(166, 100%, 37%)",
+            cobaltBlue: "hsl(234, 85%, 45%)",
+
+            grBgSlateBlue: "hsl(252, 100%, 67%)",
+            grBgRoyalBlue: "hsl(241, 81%, 54%)",
+            grCrVioletBlue: "hsla(256, 72%, 46%, 1)",
+            grCrPersianBlue: "hsla(241, 72%, 46%, 0)",
+
+            paleBlue: "hsl(221, 100%, 96%)",
+            lightLavender: "hsl(241, 100%, 89%)",
+            darkGrayBlue: "hsl(224, 30%, 27%)",
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body class="font-Hanken h-screen md:flex md:justify-center">
+
+  <div class="md:w-[736px] md:h-[512px] md:flex md:flex-row md:items-center md:mx-auto md:my-auto md:shadow-xl md:rounded-[35px]">
+
+    <section class="
+        h-[358px] w-full
+        bg-gradient-to-b from-grBgSlateBlue to-grBgRoyalBlue
+        flex flex-col items-center
+        rounded-b-[35px]
+        text-white
+
+        md:w-1/2 md:h-full md:rounded-[35px]
+      ">
+      <h3 class="
+        mt-[45px]
+        font-bold
+        text-lightLavender
+        md:text-lg md:mt-[42px]
+      ">Your Result</h3>
+      <div class="
+          h-[135px] w-[135px] mt-4
+          rounded-full
+          flex flex-col items-center justify-center gap-3
+          bg-gradient-to-b from-grCrVioletBlue to-grCrPersianBlue
+          md:mt-10 md:h-[200px] md:w-[200px]
+        ">
+        <span class="text-5xl	font-extrabold mt-2 md:text-6xl">76</span>
+        <p class="font-medium text-lightLavender md:text-sm">of 100</p>
+      </div>
+      <h1 class="mt-6 font-bold md:mt-7 md:text-2xl">Great</h1>
+      <p class="mt-2 text-lightLavender text-center whitespace-break-spaces w-56 md:mt-5 md:text-sm md:w-52">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+    <section class="p-[30px] md:w-1/2 md:p-10 md:h-full">
+      
+      <h3 class="font-bold text-darkGrayBlue md:text-lg">Summary</h3>
+      
+      <div class="
+        h-14 w-full 
+        flex flex-row justify-between
+        p-5 mt-6 
+        rounded-xl bg-lightRed bg-opacity-10
+        md:mt-8
+      ">
+        <div class="flex flex-row items-center font-medium">
+          <img src="./assets/images/icon-reaction.svg" alt="" class="h-5 w-5">
+          <p class="ml-2 text-lightRed md:text-sm md:ml-3">Reaction</p>
+        </div>
+        <p class="font-bold text-darkGrayBlue text-opacity-40 md:text-sm">
+          <span class="text-darkGrayBlue">80</span> / 100
+        </p>
+      </div>
+  
+      <div class="
+        h-14 w-full 
+        flex flex-row justify-between
+        p-5 mt-4 
+        rounded-xl bg-orangeYellow bg-opacity-10
+      ">
+        <div class="flex flex-row items-center font-medium">
+          <img src="./assets/images/icon-memory.svg" alt="" class="h-5 w-5">
+          <p class="ml-2 text-orangeYellow md:text-sm md:ml-3">Memory</p>
+        </div>
+        <p class="font-bold text-darkGrayBlue text-opacity-40 md:text-sm">
+          <span class="text-darkGrayBlue">80</span> / 100
+        </p>
+      </div>
+  
+      <div class="
+        h-14 w-full 
+        flex flex-row justify-between
+        p-5 mt-4
+        rounded-xl bg-greenTeal bg-opacity-10
+      ">
+        <div class="flex flex-row items-center font-medium">
+          <img src="./assets/images/icon-verbal.svg" alt="" class="h-5 w-5">
+          <p class="ml-2 text-greenTeal md:text-sm md:ml-3">Verbal</p>
+        </div>
+        <p class="font-bold text-darkGrayBlue text-opacity-40 md:text-sm">
+          <span class="text-darkGrayBlue">80</span> / 100
+        </p>
+      </div>
+  
+      <div class="
+        h-14 w-full 
+        flex flex-row justify-between
+        p-5 mt-4 
+        rounded-xl bg-cobaltBlue bg-opacity-10
+      ">
+        <div class="flex flex-row items-center font-medium">
+          <img src="./assets/images/icon-visual.svg" alt="" class="h-5 w-5">
+          <p class="ml-2 text-cobaltBlue md:text-sm md:ml-3">Visual</p>
+        </div>
+        <p class="font-bold text-darkGrayBlue text-opacity-40 md:text-sm">
+          <span class="text-darkGrayBlue">80</span> / 100
+        </p>
+      </div>
+  
+      <div class="h-14 w-full bg-darkGrayBlue p-5 mt-4 rounded-full text-white flex justify-center items-center md:mt-10 md:text-base hover:bg-gradient-to-b hover:from-grBgSlateBlue hover:to-grBgRoyalBlue">
+        Continue
+      </div>
+    </section>
+  </div>
+  <div class="hidden md:absolute md:mt-4 md:text-xs md:block">
+    Challenge by 
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by 
+    <span class="text-grCrVioletBlue">Prince Dalsaniya</span>.
+  </div>
+</body>
+</html>
